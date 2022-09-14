@@ -66,12 +66,12 @@
     <div class="container">
       <div class="row d-flex">
         <div class="d-none d-lg-block col-lg-3">
-          <div class="card bg-dark" style="box-shadow: 1px 3px 1px black;">
-            <img src="images/movie1.jpg" class="card-img-top" alt="...">
+          <div class="card bg-black border-0" style="box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.357);">
+            <img src="images/movie1.jpg" class="card-img-top" alt="한 남자가 빗속에서 팔을 벌리고 무릎을 꿇고 있다">
             <div class="card-body">
               <div class="button d-flex justify-content-center align-items-center">
                 <div class="d-flex">
-                  <img src="./images/netflix-icon.jpeg" alt="" style="width:3rem; height:3rem; border-radius:.5rem;">
+                  <a href="https://www.netflix.com/browse"><img src="./images/netflix-icon.jpeg" alt="넷플릭스 아이콘" style="width:3rem; height:3rem; border-radius:.5rem;"></a>
                   <div class="mx-2 d-flex flex-column justify-content-center">
                     <p class="mb-0 lh-sm text-secondary">Now streaming</p>
                     <p class="mb-0 lh-sm text-white fw-bolder">Watch Now</p>
@@ -82,7 +82,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-9 d-flex flex-column justify-content-center">
-          <h1 class="text-white fw-bold" style="letter-spacing:-1px;">쇼생크 탈출<span class="fw-light text-light">(1994)</span></h1>
+          <h1 class="text-white fw-bold" style="letter-spacing:-1px;">쇼생크 탈출<span class="fw-light text-light fs-4">(1994)</span></h1>
           <div class="d-flex align-items-center">
             <span class="badge text-bg-dark border border-light">15</span>
             <!-- <span class="border text-white py-0 px-1 rounded text-center" style="font-size:13px;"> 15</span> -->
@@ -99,17 +99,17 @@
               <span class="bi bi-star-half" style="color: rgb(253, 174, 48);"></span>
               <p class="mb-0 text-center text-white" style="font-size: 14px;">87점 / 100점</p>
             </div>
-            <button type="button" class="btn btn-outline-light bg-dark mx-2">
+            <button type="button" class="btn btn-outline-light bg-dark mx-2 border border-2 border-opacity-50">
               <i class="bi bi-list-ul"></i>
             </button>
-            <button type="button" class="btn btn-outline-light bg-dark mx-2">
+            <button type="button" class="btn btn-outline-light bg-dark mx-2 border border-2 border-opacity-50">
               <i class="bi bi-suit-heart-fill"></i>
             </button>
-            <button type="button" class="btn btn-outline-light bg-dark mx-2">
+            <button type="button" class="btn btn-outline-light bg-dark mx-2 border border-2 border-opacity-50">
               <i class="bi bi-bookmark-fill"></i>
             </button>
             <!-- Button trigger modal -->
-            <button type="button" class="btn btn-dark mx-2" data-bs-toggle="modal" data-bs-target="#youtube">
+            <button type="button" class="btn btn-dark mx-2" data-bs-toggle="modal" data-bs-target="#youtube" onclick="LoadVideo()">
               <i class="bi bi-play-fill"></i> 예고편 재생
             </button>
             <!-- Modal -->
@@ -119,10 +119,10 @@
                   <div class="modal-body d-flex flex-column bg-black">
                     <div class="d-flex justify-content-between mx-2 mb-2">
                       <span class="fw-bold text-light">쇼생크 탈출 30초 예고편</span>
-                      <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" onclick="deleteVideo()"></button>
                     </div>
                     <div class="ratio ratio-16x9 me-5" style="width: 100%;">
-                      <iframe width="560" height="315" src="https://www.youtube.com/embed/v7vtswbmJ0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                      <iframe id="VideoPlayer" width="560" height="315" src="https://www.youtube.com/embed/v7vtswbmJ0Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                   </div>
                 </div>
@@ -132,6 +132,13 @@
           <p class="mt-3 fw-light" style="color: rgba(240, 225, 225, 0.899)"><i>두려움은 너를 죄수로 가두고 희망은 너를 자유롭게 하리라</i></p>
           <h4 class="text-white mt-2" style="letter-spacing:-.5px;">개요</h4>
           <p class="text-white fw-lighter" style="letter-spacing:-.5px;">촉망받는 은행 간부 앤디 듀프레인은 아내와 그녀의 정부를 살해했다는 누명을 쓴다. 주변의 증언과 살해 현장의 그럴듯한 증거들로 그는 종신형을 선고받고 악질범들만 수용한다는 지옥같은 교도소 쇼생크로 향한다. 인간 말종 쓰레기들만 모인 그곳에서 그는 이루 말할 수 없는 억압과 짐승보다 못한 취급을 당한다. 그러던 어느 날, 간수의 세금을 면제받게 해 준 덕분에 그는 일약 교도소의 비공식 회계사로 일하게 된다. 그 와중에 교도소 소장은 죄수들을 이리저리 부리면서 검은 돈을 긁어 모으고 앤디는 이 돈을 세탁하여 불려주면서 그의 돈을 관리하는데...</p>
+          <div>
+            <button type="button" class="btn btn-outline-primary border border-light border-2 border-opacity-25 me-2">
+              <a href="https://www.wavve.com/player/movie?movieid=MV_CD01_WR0000011371"><img src="./images/wavve-logo.svg" alt="웨이브 아이콘" style="width:3rem; height:1.5rem; border-radius:.3rem;"></a>
+            </button>
+            <button type="button" class="btn btn-outline-light border border-light border-2 border-opacity-25 me-2">
+              <a href="https://pedia.watcha.com/ko-KR/contents/mNdKBkO"><img src="./images/watcha-icon.png" alt="왓챠 아이콘" style="width:3rem; height:1.5rem; border-radius:.3rem;"></a>
+            </button>
           </div>
         </div>
       </div>
@@ -202,5 +209,17 @@
   </footer>
   
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    function deleteVideo()
+    {    
+    document.getElementById('VideoPlayer').src='';    
+    }
+
+    function LoadVideo()
+    {    
+    document.getElementById('VideoPlayer').src='https://www.youtube.com/embed/v7vtswbmJ0Q';    
+    }
+    </script>
 </body>
 </html>
