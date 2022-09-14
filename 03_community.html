@@ -7,8 +7,9 @@
   <title>Document</title>
   <!-- CSS only -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body style="height: 100rem;">
   <!-- navbar -->
   <nav class="navbar navbar-dark navbar-expand-lg bg-dark">
     <div class="container-fluid">
@@ -119,6 +120,9 @@
             </tbody>
           </table>
         </div>
+        <div class="d-block d-lg-none col-3 offset-9 mb-3">
+          <a class="btn btn-primary float-end" href="04_form.html" role="button">글 작성하기</a>
+        </div>
         <div class="d-block d-lg-none col-12">
           <div class="card mb-3">
             <div class="card-body">
@@ -161,18 +165,23 @@
             </div>
           </div>
         </div>
+        <div class="row d-none d-lg-flex">
+          <div class="d-flex col-4 offset-4 justify-content-center">
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link text-dark fw-bold" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+                <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+                <li class="page-item"><a class="page-link text-dark fw-bold" href="#">Next</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-2 offset-2">
+            <a class="btn btn-primary float-end" href="04_form.html" role="button">글 작성하기</a>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="d-flex justify-content-center">
-      <nav aria-label="Page navigation example justify-content-center">
-        <ul class="pagination">
-          <li class="page-item"><a class="page-link text-dark fw-bold" href="#">Previous</a></li>
-          <li class="page-item"><a class="page-link text-dark" href="#">1</a></li>
-          <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-          <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-          <li class="page-item"><a class="page-link text-dark fw-bold" href="#">Next</a></li>
-        </ul>
-      </nav>
     </div>
   </section>
   <!-- navbar 끝 -->

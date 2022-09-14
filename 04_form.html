@@ -66,8 +66,39 @@
       </div>
     </div>
   </nav>
-  <!-- navbar 끝 -->
-  <footer class="d-flex justify-content-center p-3 bg-dark">
+  <div class="container">
+    <h1 class="text-center my-5 fw-bold text-space">리뷰 작성하기</h1>
+    <div class="row">
+      <div class="col-12">
+        <select class="form-select" aria-label="Default select example">
+          <option selected>영화 선택하기</option>
+          <option value="1">쇼생크 탈출</option>
+          <option value="2">죽은 시인의 사회</option>
+          <option value="3">다크나이트 라이즈</option>
+          <option value="4">그랜드 부다페스트 호텔</option>
+          <option value="5">Her</option>
+          <option value="6">위대한 쇼맨</option>
+        </select>
+      </div>
+      <div class="col-12">
+        <div class="my-3">
+          <label for="exampleFormControlInput1" class="form-label">리뷰 제목</label>
+          <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="리뷰를 작성해주세요.">
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label">리뷰 내용</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+      </div>
+      <div class="col-3">
+        <input class="btn btn-dark" type="submit" value="제출">
+      </div>
+    </div>
+  </div>
+
+  <footer class="d-flex fixed-bottom justify-content-center p-3 bg-dark mt-4">
     <div class="text-light">Web-bootstrap PJT by 류진숙, 백동원</div>
   </footer>
   
