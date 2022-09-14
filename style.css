@@ -1,8 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500&display=swap');
+
+body{
+  font-family: 'Gothic A1', sans-serif;
+}
+
+.text-space{
+  letter-spacing: -1px;
+}
+
 .movie-text{
   font-size: .7rem;
 }
 
 .card-height{
   height: 41rem;
+}
+
+.banner-bg{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgb(139 75 59 / 78%) 100%), 
+  url(./images/쇼생크탈출bg.jpg);
+  background-size: cover;
 }
 
