@@ -24,6 +24,20 @@ body{
   background-size: cover;
 }
 
+.banner-bg2{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgba(241.5, 199.5, 94.5, 1) 150px, rgba(242, 200, 95, 0.637) 100%), 
+  url(./images/죽은시인의사회.jpeg);
+  background-size: cover;
+}
+
+.banner-bg3{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgb(37, 37, 40) 150px, rgba(23, 84, 57, 0.441) 100%), 
+  url(./images/다크나이트라이즈.jpeg);
+  background-size: cover;
+}
+
 .banner-bg4{
   height: 40rem;
   background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgba(245, 145, 195, 0.78) 100%), 
