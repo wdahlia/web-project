@@ -19,8 +19,11 @@ body{
 
 .banner-bg{
   height: 40rem;
-  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgb(139 75 59 / 78%) 100%), 
+  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgba(168, 116, 102, 0.78) 100%), 
   url(./images/쇼생크탈출bg.jpg);
   background-size: cover;
 }
 
+.bg-color{
+  background-color: rgb(227 220 218 / 65%);
+}
