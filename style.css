@@ -24,6 +24,27 @@ body{
   background-size: cover;
 }
 
+.banner-bg4{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgba(245, 145, 195, 0.78) 100%), 
+  url(./images/그랜드부다페스트호텔bg.jpg);
+  background-size: cover;
+}
+
+.banner-bg5{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgba(250, 20, 89, 0.78) 100%), 
+  url(./images/Herbg.jpg);
+  background-size: cover;
+}
+
+.banner-bg6{
+  height: 40rem;
+  background-image: linear-gradient(to right, rgba(21, 12, 7, 0.781) 150px, rgba(34, 85, 253, 0.78) 100%), 
+  url(./images/위대한쇼맨bg.jpg);
+  background-size: cover;
+}
+
 .bg-color{
   background-color: rgb(227 220 218 / 65%);
 }
